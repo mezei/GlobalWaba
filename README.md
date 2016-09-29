@@ -16,4 +16,4 @@ Still, having JavaScript enabled is completely up to you and if you choose to di
 # Installation
 Just copy everything excluding the develop directory. (That folder contains the uncompressed project.)
 
-Even though we are using php, our root is index.html and not index.php. This is because we are not using anything server generated on the initial home page and it would be unnecessary to call php to serv static content.
+Even though we are using php, our root is index.html and not index.php. This is because we are not using anything server generated on the initial home page and it would be unnecessary to call php to serve static content.
