@@ -17,3 +17,6 @@ Still, having JavaScript enabled is completely up to you and if you choose to di
 Just copy everything excluding the develop directory. (That folder contains the uncompressed project.)
 
 Even though we are using php, our root is index.html and not index.php. This is because we are not using anything server generated on the initial home page and it would be unnecessary to call php to serve static content.
+
+# Server Notes
+We are using a file database to store some minor user data (db.data and countriesdb.data), so the "s" folder inside the project might need write permissions to function properly. We only store 2-3 megabytes of data at max capacity because we have various limits in place.
