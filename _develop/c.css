@@ -1,0 +1,551 @@
+
+	/* core.css */
+
+	/* Global Rules */
+
+	body{
+		margin: 0;
+		background: #fafafa;
+		font-family: Arial;
+	}
+
+	div{
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	p, h1, h2{
+		margin: 0;
+	}
+
+	.a{
+		position: absolute;
+	}
+
+	.r{
+		position: relative;
+	}
+
+	.w{
+		width: 100%;
+	}
+
+	/* Back to Top */
+
+	#t{
+		position: fixed;
+		cursor: pointer;
+		padding: 6px 0;
+		background: #1FCFA4;
+		color: #fff;
+		text-shadow: 1px 1px #2eaa8f;
+		border-bottom: 2px #239C84 solid;
+		text-align: center;
+		text-decoration: none;
+		font-weight: bold;
+		opacity: 0.9;
+		z-index: 1;
+	}
+	#t:hover{
+		background: #4cdeba;
+		opacity: 1;
+	}
+
+	/* Animation Container */
+
+	#ac{
+		z-index: 2;
+	}
+
+	/* Air Background */
+
+	#ab{
+		height: 245px;
+		background: #74e5fe;
+		background: linear-gradient(to bottom, #3dbdf0 0%,#54cfff 20%,#54f9ff 50%,#d4ed81 100%);
+        overflow: hidden;
+	}
+
+	/* Water Container */
+
+	.wc{
+		overflow: hidden;
+	}
+
+	/* Below Water Artifacts */
+
+	.bw{
+		left: 0;
+		top: 240px;
+	}
+
+	/* Polar Bear */
+
+	.pb{
+		left: 50%;
+		width: 80px;
+		height: 43px;
+		margin-top: -55px;
+		background: url(r/b.png);
+		background-size: 100%;
+	}
+
+	/* Iceberg */
+
+	.ib{
+		left: 50%;
+		width: 100px;
+		height: 100px;
+		margin-top: -13px;
+		border-top: 2px #ddd solid;
+		border-right: 6px #ddd solid;
+		background: #fff;
+	}
+
+	/* Water Title */
+
+	.wt > h1{
+		color: #fff;
+		padding-top: 60px;
+		text-shadow: 2px 4px #176083;
+		max-width: 90%;
+		margin: 0 auto;
+	}
+
+	/* Water Background */
+
+	.wb{
+		height: 100%;
+		background: #23769c;
+		border-top: 10px #1e8bbd solid;
+		/* Bubbles only */
+        overflow: hidden;
+	}
+
+	/* Paragraph Container */
+
+	.pc{
+		width: 880px;
+		max-width: 85%;
+		padding: 80px 0 20px;
+	}
+
+	/* Paragraph */
+
+	.p1, .p2, .p3{
+		display: block;
+		width: 40%;
+		margin-bottom: 80px;
+		color: #fff;
+	}
+
+	.p1{
+		margin-left: 0;
+	}
+
+	.p2{
+		margin-top: -100px;
+		margin-left: 60%;
+	}
+
+	.p3{
+		margin-top: -80px;
+		margin-left: 0;
+	}
+
+	/* Paragraph Header */
+
+	.pc h2{
+		text-align: left;
+		border-bottom: 8px #3288b1 solid;
+		padding-bottom: 8px;
+		text-shadow: 2px 4px #176083;
+		font-size: 1.7em;
+	}
+
+	/* Paragraph Text */
+
+	.pc h3{
+		text-align: justify;
+		font-weight: normal;
+		font-size: 1em;
+		text-shadow: 1px 2px #195977;
+		margin-top: 8px;
+		line-height: 1.4em;
+	}
+
+	/* Solution Container */
+
+	.sc{
+		border-top: 10px #3f8eb4 solid;
+	}
+
+	/* Solution Wrap */
+
+	.sw{
+		padding: 40px 0 60px;
+		width: 800px;
+		max-width: 85%;
+		color: #444;
+	}
+
+	/* Solution Title */
+
+	.sw > h1{
+		text-shadow: 2px 4px #e8e8e8;
+		margin: 0 0 40px;
+	}
+
+	/* Solution */
+
+	.s{
+		text-align: justify;
+		padding-bottom: 40px;
+	}
+
+	/* Solution Advices Container */
+
+	.lc{
+		display: inline-block;
+		vertical-align: top;
+		margin: 0 4px;
+		width: 340px;
+		max-width: 80%;
+	}
+
+	/* Solution Advices Title */
+
+	.lc > h3{
+		margin: 0;
+		padding-bottom: 8px;
+	}
+
+	/* Solution Advices List */
+
+	.lc > ol{
+		display: inline-block;
+		text-align: left;
+		color: #333;
+		font-size: 110%;
+	}
+
+	/* Solution Link */
+
+	.sw > a{
+		display: block;
+		margin: 40px auto 0;
+		width: 260px;
+		max-width: 95%;
+		padding: 12px 0;
+		cursor: pointer;
+		background: #1fcfa4;
+		color: #fff;
+		border-radius: 5px;
+		text-shadow: 1px 1px #2eaa8f;
+		text-decoration: none;
+		font-weight: bold;
+		border-right: 2px #26b18f solid;
+		border-bottom: 2px #26b18f solid;
+	}
+	.sw > a:focus, .sw > a:hover{
+		color: #fff;
+		background: #28b9aa;
+	}
+
+	/* Form Container */
+
+	#fc{
+		background: #239c84;
+		padding: 40px 0 60px;
+		color: #fff;
+		border-top: 10px #138c88 solid;
+	}
+
+	/* Form Title */
+
+	#fc > h1{
+		text-shadow: 2px 4px #1d7a66;
+	}
+
+	/* Form Header */
+
+	.fh{
+		width: 800px;
+		max-width: 90%;
+		padding: 40px 0;
+		text-shadow: 1px 2px #2e7d6c;
+	}
+
+	/* Form Wrapper */
+
+	#fw{
+		display: inline-block;
+		background: #fff;
+		padding: 28px 32px;
+		border-radius: 5px;
+		box-shadow: 0 0 3px #555;
+		max-width: 80%;
+	}
+
+	/* Form Data */
+
+	.fd{
+		vertical-align: top;
+		display: inline-block;
+	}
+
+	/* Form Info */
+
+	.fi{
+		vertical-align: top;
+		display: inline-block;
+		text-align: left;
+		color: #444;
+		max-width: 420px;
+		padding-left: 32px;
+		margin-top: -10px;
+	}
+
+	/* Form */
+
+	#f{
+		text-align: left;
+		min-width: 220px;
+	}
+
+	/* Form Error (Server Submit Response) */
+
+	#f h4{
+		width: 250px;
+		color: #d14535;
+		margin: 8px 0 0 0;
+		font-weight: normal;
+	}
+
+	/* Form Labels */
+
+	#f > p{
+		display: block;
+		font-size: 70%;
+		color: #666;
+		font-weight: bold;
+		padding-left: 4px;
+	}
+
+	/* Form Input Elements */
+
+	#f > input, #f > textarea{
+		font-family: Arial;
+		display: block;
+		color: #555;
+		font-weight: bold;
+		width: 100%;
+		border: 0;
+		border-bottom: 1px #aaa solid;
+		padding: 12px 0;
+		margin-bottom: 12px;
+		font-size: 100%;
+		padding-left: 4px;
+	}
+	#f > input:focus, #f > input:hover, #f > textarea:focus, #f > textarea:hover{
+		border-color: #239c84;
+		color: #305e63;
+	}
+	#f > textarea{
+		margin-top: 12px;
+		padding-top: 0;
+		resize: none;
+	}
+	#f > input:invalid{
+		outline: none;
+		box-shadow: none;
+	}
+	#f > input:focus:invalid{
+		border-color: #c9b945;
+	}
+
+	/* Form Register/Sign Button */
+
+	#f > .fr{
+		cursor: pointer;
+		background: #28d5c3;
+		color: #fff;
+		border-radius: 5px;
+		text-shadow: 1px 1px #2eaa8f;
+		border-right: 2px #33b1a4 solid;
+		border-bottom: 2px #33b1a4 solid;
+	}
+	#f > .fr:focus, #f > .fr:hover{
+		color: #fff;
+		background: #28b9aa;
+	}
+
+	/* Form Info Subtitle */
+
+	.fi > h2{
+		padding-top: 12px;
+		border-bottom: 8px #f2f2f2 solid;
+		padding-bottom: 18px;
+	}
+
+	/* Form Texts */
+
+	.fi > p{
+		margin: 1em 0;
+	}
+
+	/* Form Alternative */
+
+	.fa{
+		padding-top: 12px;
+		border-top: 8px #f2f2f2 solid;
+		color: #888;
+		font-size: 85%;
+	}
+
+	/* Form Skip Link */
+
+	.fa > a:link{
+		color: #1b869e;
+	}
+	.fa > a:hover{
+		color: #45b6cf;
+	}
+
+	/* Footer */
+
+	#ft{
+		padding: 40px 0 20px;
+		color: #444;
+		border-top: 10px #ddd solid;
+	}
+
+	/* Footer Title */
+
+	#ft > h1{
+		text-shadow: 2px 4px #e8e8e8;
+	}
+
+	/* Footer Text */
+
+	.ft{
+		padding: 20px 0px;
+	}
+
+	/* Footer Extra */
+
+	.fe{
+		font-size: 75%;
+		color: #999;
+		max-width: 90%;
+		margin: 0 auto;
+	}
+
+	/* responsive.css - embedded */
+
+	/* Responsive Above 880px Width */
+
+	@media (min-width:881px){
+
+		/* Header */
+
+		#h{
+			margin-left: -3em;
+		}
+
+		/* Air Background */
+
+		#ab{
+			height: 260px;
+		}
+
+		/* Polar Bear */
+
+		.pb{
+			background: url(r/bx.png);
+			background-size: 100%;
+			width: 100px;
+			height: 53.75px;
+		}
+
+		/* Ice Berg */
+
+		.ib{	
+			min-width: 125px;
+			min-height: 125px;
+			margin-top: -3px;
+			border-top: 2px #ddd solid;
+			border-right: 6px #ddd solid;
+		}
+	}
+
+	/* Responsive Under 880px Width */
+
+	@media (max-width:880px){
+
+		/* Form Wrapper */
+
+		#fw{
+			max-width: 50%;
+		}
+
+		/* Form Data and Form Info */
+
+		.fd, .fi{
+			display: block;
+		}
+
+		/* Form Info */
+
+		.fi{
+			padding-left: 8px;
+   			margin-top: 8px;
+		}
+	}
+
+	/* Responsive Under 640px Width */
+
+	@media (max-width:640px){
+
+		/* Form Wrapper */
+
+		#fw{
+			max-width: 60%;
+		}
+
+		.p1, .p2, .p3{
+			width: 60%;
+			margin: 0 auto 5em;
+		}
+
+	}
+
+	/* Responsive Under 480px Width */
+
+	@media (max-width:480px){
+
+		/* Form Wrapper */
+
+		#fw{
+			max-width: 70%;
+		}
+
+		.p1, .p2, .p3{
+			width: 80%;
+		}
+	}
+
+	/* Responsive Under 360px Width */
+
+	@media (max-width:360px){
+
+		/* Form Wrapper */
+
+		#fw{
+			max-width: 75%;
+		}
+
+		.p1, .p2, .p3{
+			width: 90%;
+		}
+	}
