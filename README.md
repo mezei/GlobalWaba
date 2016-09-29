@@ -12,3 +12,8 @@ Still, having JavaScript enabled is completely up to you and if you choose to di
  - In non-JavaScript mode: If you don't know how to type your country's full name properly, don't worry, just leave some gibberish in the country input and submit it! The next page will show a list of countries to help you find what you were looking for! :)
 
  - In non-JavaScript mode: If you are on the second, results page (r.php) you can keep on refreshing the page to replay the animation - you will also be shuffled some new comments from our database down below!
+ 
+# Installation
+Just copy everything excluding the develop directory. (That folder contains the uncompressed project.)
+
+Even though we are using php, our root is index.html and not index.php. This is because we are not using anything server generated on the initial home page and it would be unnecessary to call php to serv static content.
