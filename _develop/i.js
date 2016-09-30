@@ -22,8 +22,9 @@
 	// Initialization method
 
 	function init() {
-		if (initialized)
+		if (initialized) {
 			return;
+		}
 		initialized = true;
 
 		// Get & cache common body references
@@ -259,8 +260,9 @@
 	// Attempts to update the page to "results" state and show statistics and message data
 
 	function showResults(supporter) {
-		if (onResults)
+		if (onResults) {
 			return;
+		}
 		onResults = true;
 
 		var apiLoaded = false;
@@ -272,15 +274,17 @@
 
 		// On Charts related data loaded event
 		var onLoaded = function() {
-			if (!apiLoaded || !dataLoaded || !formAnimated || loaded)
+			if (!apiLoaded || !dataLoaded || !formAnimated || loaded) {
 				return;
+			}
 			loaded = true;
 
 			// Scroll to top event
 			var scrollComplete = false;
 			var onScrollComplete = function() {
-				if (scrollComplete)
+				if (scrollComplete) {
 					return;
+				}
 				scrollComplete = true;
 
 				// Ensure user is on top
@@ -493,34 +497,21 @@
 			errors.noStatistics = true;
 			onComplete();
 		});
-
-		var data = "Germany;12;\
-			Hungary;43;\
-			Slovakia;3;\
-			Romania;7;\
-			Serbia;11;\
-			Switzerland;4;\
-			France;25;\
-			Russia;15;\
-			United Kingdom;32;\
-			United States;33;\
-			Canada;25;\
-			Brazil;12;\
-			Sweden;19";
-
 	}
 
 	function showMessages(data) {
-		if (!data)
+		if (!data) {
 			return;
+		}
 		var messageWrapper = document.getElementById("mw");
 		// Create container elements if not ready
 		if (!messageWrapper)
 			messageWrapper = drawMessageContainer();
 
 		// Error - no message data etc
-		if (!messageWrapper)
+		if (!messageWrapper) {
 			return;
+		}
 
 		// Empty messages
 		messageWrapper.innerHTML = "";
@@ -566,8 +557,9 @@
 		messageContainer.appendChild(messageTitle);
 
 		// Error interrupt
-		if (errors.noMessages)
+		if (errors.noMessages) {
 			return null;
+		}
 
 		// Create Message Wrapper
 		var messageWrapper = document.createElement("div");
@@ -615,8 +607,9 @@
 		var loaded = false;
 
 		var onLoaded = function() {
-			if (!loaderLoaded || !apiLoaded)
+			if (!loaderLoaded || !apiLoaded) {
 				return;
+			}
 			loaded = true;
 			if (onComplete)
 				onComplete();
@@ -645,8 +638,9 @@
 
 		// Safety timeout
 		setTimeout(function() {
-			if (loaded)
+			if (loaded) {
 				return;
+			}
 			onComplete = null;
 			if (onError)
 				onError();
@@ -843,8 +837,9 @@
 	// Attempts to extend the page's styles by loading the appropriate css files
 
 	function extendStyles(onComplete) {
-		if (extended)
+		if (extended) {
 			return;
+		}
 		extended = true;
 		
 		loadCss("e.css", function() {
@@ -869,10 +864,12 @@
 	// Animation timeout method - returns the specified value if animations are available, 0 if not
 
 	function at(timeout) {
-		if (animatable)
+		if (animatable) {
 			return timeout;
-		else
+		}
+		else {
 			return 0;
+		}
 	}
 
 	// An animated scrollTo method
@@ -881,8 +878,9 @@
 	var scrollDirection;
 	var scrollComplete;
 	function smoothScrollTo(position, onComplete) {
-		if (position == getScrollY())
+		if (position == getScrollY()) {
 			return;
+		}
 		clearInterval(scrollInterval);
 		var scrollStep = 20;
 		var scrollTimeout = 10;
@@ -969,8 +967,9 @@
 
 	var lastScrollY = getScrollY();
 	window.addEventListener("scroll", function(e) {
-		if (scrollInterval == null)
+		if (scrollInterval == null) {
 			return;
+		}
 		var scrollY = getScrollY();
 
 		// Downwards
