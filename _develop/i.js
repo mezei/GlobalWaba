@@ -884,7 +884,7 @@
 		clearInterval(scrollInterval);
 		var scrollStep = 20;
 		var scrollTimeout = 10;
-		scrollComplete = onComplete
+		scrollComplete = onComplete;
 		scrollDirection = position > getScrollY() ? 1 : -1;
 		lastScrollY = getScrollY();
 
