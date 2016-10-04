@@ -644,7 +644,7 @@
 			onComplete = null;
 			if (onError)
 				onError();
-		}, 5000);
+		}, 15000);
 	}
 
 	// Attempts to override submit events and make everything load dynamically
@@ -1035,7 +1035,7 @@
 		setTimeout(function() {
 			if (!loaded)
 				onComplete(null, true);
-		}, 2500);
+		}, 12500);
 	}
 
 	// Attempts to load a js file from the specified url asynchronously
@@ -1054,7 +1054,7 @@
 		setTimeout(function() {
 			if (!loaded)
 				onComplete(null, true);
-		}, 2500);
+		}, 12500);
 	}
 
 	// Attempts to load any content asynchronously
@@ -1101,7 +1101,7 @@
 
 	// Now we don't actually trust a script's onloaded event, do we?
 
-	var initTriesLeft = 5;
+	var initTriesLeft = 10;
 	var initInterval = setInterval(function() {
 		initTriesLeft--;
 
