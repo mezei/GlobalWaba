@@ -20,3 +20,6 @@ Even though we are using php, our root is index.html and not index.php. This is 
 
 # Server Notes
 We are using a file database to store some minor user data (db.data and countriesdb.data), so the "s" folder inside the project might need write permissions to function properly. We only store 2-3 megabytes of data at max capacity because we have various limits in place.
+
+# Demo
+A working demo can be found @ https://glatar.hu/globalwaba/
